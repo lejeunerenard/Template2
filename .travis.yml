@@ -1,0 +1,8 @@
+language: perl
+perl:
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+env: TT_XS_DEFAULT=y TT_ACCEPT=y
+script: "perl Makefile.PL TT_ACCEPT=y TT_XS_DEFAULT=y && make test"
